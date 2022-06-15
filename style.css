@@ -1,0 +1,17 @@
+#container{
+  width: 70vw;
+  height: 70vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-areas: 'header header header'
+  'operator opertaor operator'
+  'main main main';
+}
+
+#Calculator-button{
+  grid-area: main;
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+}
