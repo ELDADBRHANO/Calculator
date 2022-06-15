@@ -1,17 +1,24 @@
 #container{
-  width: 70vw;
-  height: 70vh;
-  background-color: aqua;
+  background-color: rgb(23, 23, 23);
   display: grid;
-  grid-template-areas: 'header header header'
-  'operator opertaor operator'
-  'main main main';
+  grid-template-areas: 
+  'header header header header'
+  'operator opertaor operator operator'
+  'main main main side'
+  'main main main side'
+  'main main main side'
+  'main main main side';
+  width: 70vw;
+  height: 80vh;
 }
 
-#Calculator-button{
-  grid-area: main;
-  width: 20vw;
-  height: 5vh;
-  display: flex;
-  flex-direction: column;
+
+#container.screen{
+  grid-area: header;
+  color: black;
+}
+
+
+#even-equal{
+  grid-area: side;
 }
