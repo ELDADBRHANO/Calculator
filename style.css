@@ -13,11 +13,13 @@ border: 3px solid black;
 }
  
 
-#div_screen{
+#input_screen{
   grid-area: header;
-  height:15vh ;
+  height:15vh;
+  font-size: xx-large;
 }
 
 #equal_even{
   grid-area: side;
+  background-color: coral;
 }
