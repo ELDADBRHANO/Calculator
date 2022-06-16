@@ -1,24 +1,23 @@
 #container{
-  background-color: rgb(23, 23, 23);
-  display: grid;
-  grid-template-areas: 
-  'header header header header'
-  'operator opertaor operator operator'
-  'main main main side'
-  'main main main side'
-  'main main main side'
-  'main main main side';
-  width: 70vw;
-  height: 80vh;
+display: grid;
+grid-template-areas:
+"header header header header"
+"operator operator operator operator"
+"main main main side"
+"main main main side"
+"main main main side"
+"main main main side";
+width: 70vw;
+height: 70vh;
+border: 3px solid black;
 }
+ 
 
-
-#container.screen{
+#div_screen{
   grid-area: header;
-  color: black;
+  height:15vh ;
 }
 
-
-#even-equal{
+#equal_even{
   grid-area: side;
 }
