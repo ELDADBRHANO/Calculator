@@ -20,6 +20,8 @@ cursor: help;
   height:15vh;
   font-size: xx-large;
   padding: 5vw;
+  border-bottom: 2px solid black;
+  
 }
 
 #equal_even{
