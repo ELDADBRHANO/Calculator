@@ -41,3 +41,7 @@ btns.map((btn) => {
     }
   });
 });
+
+
+// eval is dangeros for app with real users!!!!
+// ****************do-not-use eval functionn.
