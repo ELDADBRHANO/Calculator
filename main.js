@@ -23,8 +23,8 @@
 
 let btns = Array.from(document.getElementsByClassName("btn"));
 btns.map((btn) => {
-  btn.addEventListener("click", (el) => {
-    switch (el.target.innerText) {
+  btn.addEventListener("click", (event) => {
+    switch (event.target.innerText) {
       case "AC":
         input_screen.innerText = "";
         break;
@@ -37,7 +37,7 @@ btns.map((btn) => {
           input_screen.innerText= eval(input_screen.innerText);
           break;
       default:
-        input_screen.innerText += el.target.innerText;
+        input_screen.innerText += event.target.innerText;
     }
   });
 });
