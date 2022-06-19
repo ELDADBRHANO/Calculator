@@ -8,8 +8,8 @@ grid-template-areas:
 "main main main side"
 "main main main side"
 "main main main side";
-width: 70vw;
-height: 70vh;
+/* width: 70vw;
+height: 70vh; */
 border: 3px solid black;
 cursor: help;
 }
@@ -30,8 +30,8 @@ cursor: help;
   display: flex;
   align-items: center;
 }
-.btn{
+/* .btn{
   display: flex;
   justify-content: center;
   font-size: xx-large;
-}
+} */
