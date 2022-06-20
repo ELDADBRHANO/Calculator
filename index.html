@@ -8,25 +8,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input id="container"></input>
+  <div id="container">
   <input id="input_screen"></input>
-  <input class="btn" onclick="calculate(delet)" type="button" value="AC"  id="delet"></input type="button">
-  <input class="btn" onclick="calculate(division)" type="button" value="÷"  id="division"> </input type="button">
-  <input class="btn" onclick="calculate(percent)" type="button" value="%"   id="percent"></input type="button">
-  <input class="btn" onclick="calculate(plus)"  type="button" value="+"   id="plus"></input type="button">
-  <input class="btn" onclick="calculate(minus)" type="button" value="-"   id="minus"></input type="button">
-  <input class="btn" onclick="calculate(seven)" type="button" value="7"  id="seven"></input type="button">
-  <input class="btn" onclick="calculate(eight)" type="button" value="8"  id="eight"></input type="button">
-  <input class="btn" onclick="calculate(nine)" type="button" value="9"   id="nine"></input type="button">
-  <input class="btn" onclick="calculate(four)" type="button" value="4" id="four"></input>
-  <input class="btn" onclick="calculate(five)" type="button" value="5" id="five"></input type="button">
-  <input class="btn" onclick="calculate(six)" type="button" value="6" id="six"></input type="button">
-  <input class="btn" onclick="calculate(one)" type="button" value="1"  id="one"></input type="button">
-  <input class="btn" onclick="calculate(two)" type="button" value="2"   id="two"></input type="button">
-  <input class="btn" onclick="calculate(three)" type="button" value="3"   id="three"></input type="button">
-  <input class="btn" onclick="calculate(zero)" type="button" value="0"   id="zero"></input type="button">
-  <input class="btn" onclick="calculate(dot)" type="button" value="."  id="dot"></input type="button">
-  <input class="btn" onclick="equalEven(equal_even)" type="button" value="="  id="equal_even"></input type="button">
+  <input class="btn" onclick="clearAll()" type="button" value="AC"  id="delet"></input>
+  <input class="btn" onclick="deleteAll()" type="button" value="→"  id="delete"></input>
+  <input class="btn" onclick="displayNumbers(division)" type="button" value="÷"  id="division"> </input>
+  <input class="btn" onclick="displayNumbers(percent)" type="button" value="%"   id="percent"></input>
+  <input class="btn" onclick="displayNumbers(plus)"  type="button" value="+"   id="plus"></input>
+  <input class="btn" onclick="displayNumbers(minus)" type="button" value="-"   id="minus"></input>
+  <input class="btn" onclick="displayNumbers(seven)" type="button" value="7"  id="seven"></input>
+  <input class="btn" onclick="displayNumbers(eight)" type="button" value="8"  id="eight"></input>
+  <input class="btn" onclick="displayNumbers(nine)" type="button" value="9"   id="nine"></input>
+  <input class="btn" onclick="displayNumbers(four)" type="button" value="4" id="four"></input>
+  <input class="btn" onclick="displayNumbers(five)" type="button" value="5" id="five"></input>
+  <input class="btn" onclick="displayNumbers(six)" type="button" value="6" id="six"></input >
+  <input class="btn" onclick="displayNumbers(one)" type="button" value="1"  id="one"></input>
+  <input class="btn" onclick="displayNumbers(two)" type="button" value="2"   id="two"></input>
+  <input class="btn" onclick="displayNumbers(three)" type="button" value="3"   id="three"></input>
+  <input class="btn" onclick="displayNumbers(zero)" type="button" value="0"   id="zero"></input>
+  <input class="btn" onclick="displayNumbers(dot)" type="button" value="."  id="dot"></input>
+  <input class="btn" onclick="caluclatin()" type="button" value="="  id="shave"></input>
+</div>
   <script src="main.js"></script>
 </body>
 </html>

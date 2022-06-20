@@ -24,7 +24,7 @@ cursor: help;
   
 }
 
-#equal_even{
+#shave{
   grid-area: side;
   background-color: coral;
   display: flex;

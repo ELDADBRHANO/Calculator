@@ -1,8 +1,8 @@
-function calculate(num) {
+function displayNumbers(num) {
   input_screen.value += num.value;
 }
 
-function equalEven() {
+function caluclatin() {
   let arrayNumbers = [];
   let ArrayOperators = [];
   let numToCalculate = "";
@@ -15,35 +15,44 @@ function equalEven() {
       case "÷":
         arrayNumbers.push(+numToCalculate);
         numToCalculate = "";
-        ArrayOperators.push(input_screen.value[i]) 
+        ArrayOperators.push(input_screen.value[i]);
         break;
       default:
-        numToCalculate+=input_screen.value[i]
+        numToCalculate += input_screen.value[i];
+        break;
+    }
+    if (i == input_screen.value.length - 1) {
+      arrayNumbers.push(+numToCalculate);
+    }
+  }
+
+  result = arrayNumbers[0];
+  for (let i = 0; i < ArrayOperators.length; i++) {
+    switch (ArrayOperators[i]) {
+      case "+":
+        result += arrayNumbers[i + 1];
+        break;
+      case "-":
+        result -= arrayNumbers[i + 1];
+        break;
+      case "%":
+        result /= arrayNumbers[i + 1];
+        break;
+      case "*":
+        result *= arrayNumbers[i + 1];
+        break;
+      default:
         break;
     }
   }
+  input_screen.value = result
 }
 
-// let btns = Array.from(document.getElementsByClassName("btn"));
-// btns.map((btn) => {
-//   btn.addEventListener("click", (event) => {
-//     switch (event.target.innerText) {
-//       case "AC":
-//         input_screen.innerText = "";
-//         break;
-//       case "→":
-//         if (input_screen.innerText) {
-//           input_screen.innerText = input_screen.innerText.slice(0, -1);
-//         }
-//         break;
-//       case "=":
-//         input_screen.innerText = eval(input_screen.innerText);
-//         break;
-//       default:
-//         input_screen.innerText += event.target.innerText;
-//     }
-//   });
-// });
+function deleteAll() {
+  input_screen.value.toString();
+  input_screen.value=input_screen.value.slice(0,-1)
+}
 
-// eval is dangeros for app with real users!!!!
-// ****************do-not-use eval functionn.
+function clearAll() {
+  input_screen.value=""
+}
